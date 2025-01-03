@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Video Enhancer",
+  "description": "Adds next episode button and arrow key skip to video players.",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon.png"
+  }
+}
